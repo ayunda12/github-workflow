@@ -51,6 +51,7 @@
 			echo $errors[0];
 		}
 	}else{
-		echo "Missing data";
+		//comment
+		echo "The given data was invalid.";
 	}
 ?>

@@ -52,6 +52,6 @@
 		}
 	}else{
 		//comment
-		echo "The given data was invalid.";
+		echo "The given data was invalids.";
 	}
 ?>

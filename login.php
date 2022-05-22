@@ -35,6 +35,7 @@
 					}else{
 						// msg error
 						$errors[] = "Wrong email or password.";
+
 					}
 				}else{
 					$errors[] = "Wrong email or password.";

@@ -11,6 +11,7 @@
 		if ($stmt = $mysqli_conection->prepare("SELECT username, email, password FROM sc_users WHERE email = ? LIMIT 1")) {
 			
 			/* bind parameters for markers */
+			
 			$stmt->bind_param('s', $email);
 				
 			/* execute query */
@@ -21,6 +22,7 @@
 
 				if($stmt->num_rows > 0){
 					/* bind result variables */
+
 					$stmt->bind_result($username_tmp, $email_tmp, $password_hash);
 
 					/* fetch value */
@@ -32,6 +34,7 @@
 						return;
 					}else{
 						$errors[] = "Wrong email or password.";
+
 					}
 				}else{
 					$errors[] = "Wrong email or password.";
